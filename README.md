@@ -49,8 +49,52 @@ The model with the highest accuracy was selected for deployment. The model was t
 The model achieved an accuracy of 82% on the test dataset and was deemed suitable for deployment. This demonstrates the effectiveness of deep learning techniques in predicting student success. By identifying students at risk of dropping out or underperforming, educational institutions can implement timely interventions and support strategies to improve student outcomes and reduce dropout rates. The model's predictive power can help educators and policymakers make informed decisions and allocate resources effectively to support students' academic success.
 
 
-## Future Work
+## Future Work 
 In the future, we plan to explore other machine learning techniques, such as support vector machines (SVM) and gradient boosting, to improve the model's accuracy and generalization. Additionally, we aim to incorporate more diverse and comprehensive datasets to capture a wider range of factors influencing student outcomes. By leveraging advanced machine learning algorithms and data sources, we can develop more robust predictive models to address the complex problem of student success and dropout prediction.
+
+## Instructions for Running the Notebook and Loading the Saved Models
+
+Prerequisites
+
+Python 3.7+: Ensure that you have Python 3.7 or later installed on your system.
+
+Jupyter Notebook: Install Jupyter Notebook to run the provided .ipynb file.
+
+Required Libraries: Install the necessary Python libraries. You can do this by running:
+
+pip install -r requirements.txt
+
+## Running the Notebook
+
+Clone the Repository:
+
+git clone <repository-url>
+cd <repository-directory>
+
+Start Jupyter Notebook:
+
+jupyter notebook
+
+Open the Notebook: In the Jupyter Notebook interface, navigate to and open the student_success_prediction.ipynb file.
+
+Run the Cells: Execute the cells in the notebook sequentially to preprocess the data, train the model, and evaluate its performance.
+
+## Loading the Saved Models
+
+Model Files: Ensure you have the saved model files (model.h5 or similar) in the appropriate directory.
+
+Load the Model: In the notebook, use the following code snippet to load the saved model:
+
+from keras.models import load_model
+
+# Load the saved model
+model = load_model('path/to/your/saved_model.h5')
+
+# Example of using the model for prediction
+predictions = model.predict(your_input_data)
+
+
+Prediction: Use the loaded model to make predictions on new data as demonstrated in the notebook.
 
 
 ## References
